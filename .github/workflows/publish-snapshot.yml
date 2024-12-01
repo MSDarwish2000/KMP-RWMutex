@@ -1,0 +1,57 @@
+name: Publish Snapshot
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: "publish-snapshot"
+  cancel-in-progress: true
+
+env:
+  ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.SONATYPE_USERNAME }}
+  ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.SONATYPE_PASSWORD }}
+
+jobs:
+  extract-version:
+    name: Extract Library Version
+    if: github.repository == 'MayakaApps/KMP-RWMutex'
+    uses: ./.github/workflows/extract-version.yml
+
+  publish-library:
+    name: Publish Snapshot
+
+    needs: extract-version
+
+    runs-on: macOS-14
+    if: github.repository == 'MayakaApps/KMP-RWMutex' && endsWith(needs.extract-version.outputs.library-version, '-SNAPSHOT')
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: 17
+
+      - name: Setup gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Publish
+        run: ./gradlew --no-configuration-cache publishAllPublicationsToMavenCentralRepository
+
+  publish-docs:
+    name: Publish Documentation
+
+    needs: extract-version
+    if: github.repository == 'MayakaApps/KMP-RWMutex' && endsWith(needs.extract-version.outputs.library-version, '-SNAPSHOT')
+
+    uses: ./.github/workflows/publish-docs.yml
+    with:
+      library-version: ${{ needs.extract-version.outputs.library-version }}
