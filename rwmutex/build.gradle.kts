@@ -23,8 +23,15 @@ kotlin {
         nodejs()
     }
 
-    @Suppress("OPT_IN_USAGE") wasmJs()
-    @Suppress("OPT_IN_USAGE") wasmWasi()
+    @Suppress("OPT_IN_USAGE") wasmJs {
+        browser()
+        nodejs()
+        d8()
+    }
+
+    @Suppress("OPT_IN_USAGE") wasmWasi {
+        nodejs()
+    }
 
     macosX64()
     macosArm64()
