@@ -28,4 +28,4 @@ jobs:
       - name: Extract library version
         id: extract
         run: |
-          echo "library-version=$(sed -rn 's/^VERSION_NAME=(.*)\r?$/\1/p' 'rwmutex/gradle.properties')" >> $GITHUB_OUTPUT
+          echo "library-version=$(sed -rn 's/^version *?= *?"(.*)"\r?$/\1/p' 'rwmutex/build.gradle.kts')" >> $GITHUB_OUTPUT
