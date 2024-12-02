@@ -26,7 +26,6 @@ kotlin {
     @Suppress("OPT_IN_USAGE") wasmJs {
         browser()
         nodejs()
-        d8()
     }
 
     @Suppress("OPT_IN_USAGE") wasmWasi {
