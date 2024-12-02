@@ -89,7 +89,7 @@ mavenPublishing {
 
     signAllPublications()
 
-    coordinates(group.toString(), "library", version.toString())
+    coordinates(group.toString(), "rwmutex", version.toString())
 
     pom {
         name = "KMP RWMutex"
