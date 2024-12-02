@@ -1,0 +1,43 @@
+public abstract interface class com/mayakapps/rwmutex/ReadWriteMutex {
+	public abstract fun getReadMutex ()Lkotlinx/coroutines/sync/Mutex;
+	public abstract fun getState-4GAVRlY ()I
+	public abstract fun getWriteMutex ()Lkotlinx/coroutines/sync/Mutex;
+}
+
+public final class com/mayakapps/rwmutex/ReadWriteMutex$State {
+	public static final synthetic fun box-impl (I)Lcom/mayakapps/rwmutex/ReadWriteMutex$State;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (ILjava/lang/Object;)Z
+	public static final fun equals-impl0 (II)Z
+	public static final fun getActiveReaderCount-impl (I)Ljava/lang/Integer;
+	public static final fun getHasPendingReadersOrWriters-impl (I)Z
+	public static final fun getPendingOrDepartingReaderCount-impl (I)I
+	public fun hashCode ()I
+	public static fun hashCode-impl (I)I
+	public static final fun isReadLockAvailable-impl (I)Z
+	public static final fun isReadLocked-impl (I)Z
+	public static final fun isUnlocked-impl (I)Z
+	public static final fun isWriteLocked-impl (I)Z
+	public static final fun isWriteLockedOrPending-impl (I)Z
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (I)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()I
+}
+
+public final class com/mayakapps/rwmutex/ReadWriteMutexKt {
+	public static final fun ReadWriteMutex ()Lcom/mayakapps/rwmutex/ReadWriteMutex;
+	public static final fun holdsWriteLock (Lcom/mayakapps/rwmutex/ReadWriteMutex;Ljava/lang/Object;)Z
+	public static final fun readLock (Lcom/mayakapps/rwmutex/ReadWriteMutex;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static final fun readUnlock (Lcom/mayakapps/rwmutex/ReadWriteMutex;)V
+	public static final fun tryReadLock (Lcom/mayakapps/rwmutex/ReadWriteMutex;)Z
+	public static final fun tryWriteLock (Lcom/mayakapps/rwmutex/ReadWriteMutex;Ljava/lang/Object;)Z
+	public static synthetic fun tryWriteLock$default (Lcom/mayakapps/rwmutex/ReadWriteMutex;Ljava/lang/Object;ILjava/lang/Object;)Z
+	public static final fun withReadLock (Lcom/mayakapps/rwmutex/ReadWriteMutex;Lkotlin/jvm/functions/Function0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static final fun withWriteLock (Lcom/mayakapps/rwmutex/ReadWriteMutex;Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun withWriteLock$default (Lcom/mayakapps/rwmutex/ReadWriteMutex;Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static final fun writeLock (Lcom/mayakapps/rwmutex/ReadWriteMutex;Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun writeLock$default (Lcom/mayakapps/rwmutex/ReadWriteMutex;Ljava/lang/Object;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static final fun writeUnlock (Lcom/mayakapps/rwmutex/ReadWriteMutex;Ljava/lang/Object;)V
+	public static synthetic fun writeUnlock$default (Lcom/mayakapps/rwmutex/ReadWriteMutex;Ljava/lang/Object;ILjava/lang/Object;)V
+}
+
