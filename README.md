@@ -22,9 +22,6 @@ Kotlin DSL:
 ```kotlin
 repositories {
     mavenCentral()
-
-    // Add only if you're using snapshot version
-    maven("https://s01.oss.sonatype.org/content/repositories/snapshots/")
 }
 
 dependencies {
@@ -37,9 +34,6 @@ Groovy DSL:
 ```groovy
 repositories {
     mavenCentral()
-
-    // Add only if you're using snapshot version
-    maven { url "https://s01.oss.sonatype.org/content/repositories/snapshots/" }
 }
 
 dependencies {
