@@ -1,0 +1,254 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>com.mayakapps.rwmutex</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../index.html">
+                            KMP-RWMutex
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":rwmutex:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageids="rwmutex::com.mayakapps.rwmutex////PointingToDeclaration//-277632437">
+  <div class="breadcrumbs"><a href="../index.html">rwmutex</a><span class="delimiter">/</span><span class="current">com.mayakapps.rwmutex</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1370431020%2FClasslikes%2F-277632437" anchor-label="ReadWriteMutex" id="1370431020%2FClasslikes%2F-277632437" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":rwmutex:dokkaHtmlPartial/commonMain" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-read-write-mutex/index.html"><span>Read</span><wbr><span>Write</span><wbr><span><span>Mutex</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1370431020%2FClasslikes%2F-277632437"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rwmutex:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-read-write-mutex/index.html">ReadWriteMutex</a></div><div class="brief "><p class="paragraph">A writer-preferred non-reentrant read-write mutual exclusion lock.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="768903884%2FFunctions%2F-277632437" anchor-label="holdsWriteLock" id="768903884%2FFunctions%2F-277632437" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":rwmutex:dokkaHtmlPartial/commonMain" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="holds-write-lock.html"><span>holds</span><wbr><span>Write</span><wbr><span><span>Lock</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="768903884%2FFunctions%2F-277632437"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rwmutex:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-read-write-mutex/index.html">ReadWriteMutex</a><span class="token punctuation">.</span><a href="holds-write-lock.html"><span class="token function">holdsWriteLock</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">owner<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Shortcut for <a href="-read-write-mutex/write-mutex.html">ReadWriteMutex.writeMutex</a>'s <span data-unresolved-link="kotlinx.coroutines.sync/Mutex/holdsLock/#kotlin.Any/PointingToDeclaration/">Mutex.holdsLock</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1832385024%2FFunctions%2F-277632437" anchor-label="readLock" id="-1832385024%2FFunctions%2F-277632437" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":rwmutex:dokkaHtmlPartial/commonMain" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-lock.html"><span>read</span><wbr><span><span>Lock</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1832385024%2FFunctions%2F-277632437"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rwmutex:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="-read-write-mutex/index.html">ReadWriteMutex</a><span class="token punctuation">.</span><a href="read-lock.html"><span class="token function">readLock</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Shortcut for <a href="-read-write-mutex/read-mutex.html">ReadWriteMutex.readMutex</a>'s <span data-unresolved-link="kotlinx.coroutines.sync/Mutex/lock/#kotlin.Any?/PointingToDeclaration/">Mutex.lock</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="781275143%2FFunctions%2F-277632437" anchor-label="readUnlock" id="781275143%2FFunctions%2F-277632437" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":rwmutex:dokkaHtmlPartial/commonMain" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-unlock.html"><span>read</span><wbr><span><span>Unlock</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="781275143%2FFunctions%2F-277632437"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rwmutex:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-read-write-mutex/index.html">ReadWriteMutex</a><span class="token punctuation">.</span><a href="read-unlock.html"><span class="token function">readUnlock</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Shortcut for <a href="-read-write-mutex/read-mutex.html">ReadWriteMutex.readMutex</a>'s <span data-unresolved-link="kotlinx.coroutines.sync/Mutex/unlock/#kotlin.Any?/PointingToDeclaration/">Mutex.unlock</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="891076071%2FFunctions%2F-277632437" anchor-label="ReadWriteMutex" id="891076071%2FFunctions%2F-277632437" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":rwmutex:dokkaHtmlPartial/commonMain" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-read-write-mutex.html"><span>Read</span><wbr><span>Write</span><wbr><span><span>Mutex</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="891076071%2FFunctions%2F-277632437"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rwmutex:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-read-write-mutex.html"><span class="token function">ReadWriteMutex</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-read-write-mutex/index.html">ReadWriteMutex</a></div><div class="brief "><p class="paragraph">Creates a new instance of <a href="-read-write-mutex/index.html">ReadWriteMutex</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-934241339%2FFunctions%2F-277632437" anchor-label="tryReadLock" id="-934241339%2FFunctions%2F-277632437" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":rwmutex:dokkaHtmlPartial/commonMain" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="try-read-lock.html"><span>try</span><wbr><span>Read</span><wbr><span><span>Lock</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-934241339%2FFunctions%2F-277632437"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rwmutex:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-read-write-mutex/index.html">ReadWriteMutex</a><span class="token punctuation">.</span><a href="try-read-lock.html"><span class="token function">tryReadLock</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Shortcut for <a href="-read-write-mutex/read-mutex.html">ReadWriteMutex.readMutex</a>'s <span data-unresolved-link="kotlinx.coroutines.sync/Mutex/tryLock/#kotlin.Any?/PointingToDeclaration/">Mutex.tryLock</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="695274064%2FFunctions%2F-277632437" anchor-label="tryWriteLock" id="695274064%2FFunctions%2F-277632437" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":rwmutex:dokkaHtmlPartial/commonMain" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="try-write-lock.html"><span>try</span><wbr><span>Write</span><wbr><span><span>Lock</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="695274064%2FFunctions%2F-277632437"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rwmutex:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-read-write-mutex/index.html">ReadWriteMutex</a><span class="token punctuation">.</span><a href="try-write-lock.html"><span class="token function">tryWriteLock</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">owner<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Shortcut for <a href="-read-write-mutex/write-mutex.html">ReadWriteMutex.writeMutex</a>'s <span data-unresolved-link="kotlinx.coroutines.sync/Mutex/tryLock/#kotlin.Any?/PointingToDeclaration/">Mutex.tryLock</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1681055743%2FFunctions%2F-277632437" anchor-label="withReadLock" id="1681055743%2FFunctions%2F-277632437" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":rwmutex:dokkaHtmlPartial/commonMain" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="with-read-lock.html"><span>with</span><wbr><span>Read</span><wbr><span><span>Lock</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1681055743%2FFunctions%2F-277632437"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rwmutex:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="with-read-lock.html">T</a><span class="token operator">&gt; </span><a href="-read-write-mutex/index.html">ReadWriteMutex</a><span class="token punctuation">.</span><a href="with-read-lock.html"><span class="token function">withReadLock</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">action<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="with-read-lock.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="with-read-lock.html">T</a></div><div class="brief "><p class="paragraph">Shortcut for <a href="-read-write-mutex/read-mutex.html">ReadWriteMutex.readMutex</a>'s <span data-unresolved-link="kotlinx.coroutines.sync/Mutex/holdsLock/#kotlin.Any/PointingToDeclaration/">Mutex.holdsLock</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-436072033%2FFunctions%2F-277632437" anchor-label="withWriteLock" id="-436072033%2FFunctions%2F-277632437" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":rwmutex:dokkaHtmlPartial/commonMain" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="with-write-lock.html"><span>with</span><wbr><span>Write</span><wbr><span><span>Lock</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-436072033%2FFunctions%2F-277632437"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rwmutex:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="with-write-lock.html">T</a><span class="token operator">&gt; </span><a href="-read-write-mutex/index.html">ReadWriteMutex</a><span class="token punctuation">.</span><a href="with-write-lock.html"><span class="token function">withWriteLock</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">owner<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">action<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="with-write-lock.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="with-write-lock.html">T</a></div><div class="brief "><p class="paragraph">Shortcut for <a href="-read-write-mutex/write-mutex.html">ReadWriteMutex.writeMutex</a>'s <span data-unresolved-link="kotlinx.coroutines.sync//withLock/kotlinx.coroutines.sync.Mutex#kotlin.Any?#kotlin.Function0[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/">Mutex.withLock</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="843838475%2FFunctions%2F-277632437" anchor-label="writeLock" id="843838475%2FFunctions%2F-277632437" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":rwmutex:dokkaHtmlPartial/commonMain" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write-lock.html"><span>write</span><wbr><span><span>Lock</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="843838475%2FFunctions%2F-277632437"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rwmutex:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="-read-write-mutex/index.html">ReadWriteMutex</a><span class="token punctuation">.</span><a href="write-lock.html"><span class="token function">writeLock</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">owner<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Shortcut for <a href="-read-write-mutex/write-mutex.html">ReadWriteMutex.writeMutex</a>'s <span data-unresolved-link="kotlinx.coroutines.sync/Mutex/lock/#kotlin.Any?/PointingToDeclaration/">Mutex.lock</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="371757412%2FFunctions%2F-277632437" anchor-label="writeUnlock" id="371757412%2FFunctions%2F-277632437" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":rwmutex:dokkaHtmlPartial/commonMain" data-filterable-set=":rwmutex:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write-unlock.html"><span>write</span><wbr><span><span>Unlock</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="371757412%2FFunctions%2F-277632437"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rwmutex:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-read-write-mutex/index.html">ReadWriteMutex</a><span class="token punctuation">.</span><a href="write-unlock.html"><span class="token function">writeUnlock</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">owner<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Shortcut for <a href="-read-write-mutex/write-mutex.html">ReadWriteMutex.writeMutex</a>'s <span data-unresolved-link="kotlinx.coroutines.sync/Mutex/unlock/#kotlin.Any?/PointingToDeclaration/">Mutex.unlock</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>Copyright © 2024 MayakaApps.</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
