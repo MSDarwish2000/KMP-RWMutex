@@ -19,6 +19,7 @@ package com.mayakapps.rwmutex
 import kotlinx.atomicfu.AtomicInt
 import kotlinx.atomicfu.atomic
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.joinAll
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Mutex
@@ -122,7 +123,7 @@ class ReadWriteMutexTest {
     }
 
     @Test
-    fun stressReadWriteMutex() {
+    fun stressReadWriteMutex() = runTest {
         stressReadWriteMutex(1, 1)
         stressReadWriteMutex(1, 3)
         stressReadWriteMutex(1, 10)
@@ -135,7 +136,7 @@ class ReadWriteMutexTest {
         stressReadWriteMutex(10, 5)
     }
 
-    private fun stressReadWriteMutex(readerCount: Int, threadCount: Int) = runTest {
+    private suspend fun stressReadWriteMutex(readerCount: Int, threadCount: Int) {
         val dispatcher = createMultithreadedDispatcher(threadCount)
         val rwMutex = ReadWriteMutex()
 
