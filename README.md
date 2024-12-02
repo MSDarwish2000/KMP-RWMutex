@@ -10,7 +10,6 @@
 [![GitHub stars](https://img.shields.io/github/stars/MayakaApps/KMP-RWMutex)](https://github.com/MayakaApps/KMP-RWMutex/stargazers)
 [![GitHub license](https://img.shields.io/github/license/MayakaApps/KMP-RWMutex)](https://github.com/MayakaApps/KMP-RWMutex/blob/main/LICENSE)
 ![Maven Central](https://img.shields.io/maven-central/v/com.mayakapps.rwmutex/rwmutex)
-![Sonatype Nexus (Snapshots)](https://img.shields.io/nexus/s/com.mayakapps.rwmutex/rwmutex?server=https%3A%2F%2Fs01.oss.sonatype.org)
 
 </div>
 
@@ -53,8 +52,22 @@ Don't forget to replace `<version>` with the latest version found on the badges 
 ## Usage
 
 ```kotlin
-// To be implemented
+val rwMutex = ReadWriteMutex()
+
+// You can use extension functions like `withReadLock` and `withWriteLock` for simpler usage.
+rwMutex.withReadLock { /* read lock acquired */ }
+rwMutex.withWriteLock { /* write lock acquired */ }
+
+// Or you can use the mutexes directly.
+val readMutex = rwMutex.readMutex
+val writeMutex = rwMutex.writeMutex
+
+// For state checks, you can use the `state` property which returns a snapshot of the current state.
+val state = rwMutex.state
+val isReadLocked = state.isReadLocked
 ```
+
+For more information, please refer to the [API documentation](https://mayakaapps.github.io/KMP-RWMutex/api/rwmutex/com.mayakapps.rwmutex/-read-write-mutex/index.html).
 
 ## Documentation
 
