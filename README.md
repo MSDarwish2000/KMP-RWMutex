@@ -53,8 +53,22 @@ Don't forget to replace `<version>` with the latest version found on the badges 
 ## Usage
 
 ```kotlin
-// To be implemented
+val rwMutex = ReadWriteMutex()
+
+// You can use extension functions like `withReadLock` and `withWriteLock` for simpler usage.
+rwMutex.withReadLock { /* read lock acquired */ }
+rwMutex.withWriteLock { /* write lock acquired */ }
+
+// Or you can use the mutexes directly.
+val readMutex = rwMutex.readMutex
+val writeMutex = rwMutex.writeMutex
+
+// For state checks, you can use the `state` property which returns a snapshot of the current state.
+val state = rwMutex.state
+val isReadLocked = state.isReadLocked
 ```
+
+For more information, please refer to the [API documentation](https://mayakaapps.github.io/KMP-RWMutex/api/rwmutex/com.mayakapps.rwmutex/-read-write-mutex/index.html).
 
 ## Documentation
 
