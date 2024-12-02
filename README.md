@@ -10,7 +10,6 @@
 [![GitHub stars](https://img.shields.io/github/stars/MayakaApps/KMP-RWMutex)](https://github.com/MayakaApps/KMP-RWMutex/stargazers)
 [![GitHub license](https://img.shields.io/github/license/MayakaApps/KMP-RWMutex)](https://github.com/MayakaApps/KMP-RWMutex/blob/main/LICENSE)
 ![Maven Central](https://img.shields.io/maven-central/v/com.mayakapps.rwmutex/rwmutex)
-![Sonatype Nexus (Snapshots)](https://img.shields.io/nexus/s/com.mayakapps.rwmutex/rwmutex?server=https%3A%2F%2Fs01.oss.sonatype.org)
 
 </div>
 
