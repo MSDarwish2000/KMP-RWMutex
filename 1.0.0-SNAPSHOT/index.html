@@ -457,9 +457,6 @@
 <p>Kotlin DSL:</p>
 <div class="highlight"><pre><span></span><code><span class="n">repositories</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">mavenCentral</span><span class="p">()</span>
-
-<span class="w">    </span><span class="c1">// Add only if you&#39;re using snapshot version</span>
-<span class="w">    </span><span class="n">maven</span><span class="p">(</span><span class="s">&quot;https://s01.oss.sonatype.org/content/repositories/snapshots/&quot;</span><span class="p">)</span>
 <span class="p">}</span>
 
 <span class="n">dependencies</span><span class="w"> </span><span class="p">{</span>
@@ -469,9 +466,6 @@
 <p>Groovy DSL:</p>
 <div class="highlight"><pre><span></span><code><span class="n">repositories</span><span class="w"> </span><span class="o">{</span>
 <span class="w">    </span><span class="n">mavenCentral</span><span class="o">()</span>
-
-<span class="w">    </span><span class="c1">// Add only if you&#39;re using snapshot version</span>
-<span class="w">    </span><span class="n">maven</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="s2">&quot;https://s01.oss.sonatype.org/content/repositories/snapshots/&quot;</span><span class="w"> </span><span class="o">}</span>
 <span class="o">}</span>
 
 <span class="n">dependencies</span><span class="w"> </span><span class="o">{</span>
@@ -479,8 +473,21 @@
 <span class="o">}</span>
 </code></pre></div>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1">// To be implemented</span>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">rwMutex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ReadWriteMutex</span><span class="p">()</span>
+
+<span class="c1">// You can use extension functions like `withReadLock` and `withWriteLock` for simpler usage.</span>
+<span class="n">rwMutex</span><span class="p">.</span><span class="na">withReadLock</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* read lock acquired */</span><span class="w"> </span><span class="p">}</span>
+<span class="n">rwMutex</span><span class="p">.</span><span class="na">withWriteLock</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* write lock acquired */</span><span class="w"> </span><span class="p">}</span>
+
+<span class="c1">// Or you can use the mutexes directly.</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">readMutex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rwMutex</span><span class="p">.</span><span class="na">readMutex</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">writeMutex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rwMutex</span><span class="p">.</span><span class="na">writeMutex</span>
+
+<span class="c1">// For state checks, you can use the `state` property which returns a snapshot of the current state.</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rwMutex</span><span class="p">.</span><span class="na">state</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">isReadLocked</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">state</span><span class="p">.</span><span class="na">isReadLocked</span>
 </code></pre></div>
+<p>For more information, please refer to the <a href="api/rwmutex/com.mayakapps.rwmutex/-read-write-mutex/">API documentation</a>.</p>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
 <p>All the code in this repository is licensed under the Apache License, Version 2.0.</p>
 <h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h2>
