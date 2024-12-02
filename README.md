@@ -61,7 +61,7 @@ val state = rwMutex.state
 val isReadLocked = state.isReadLocked
 ```
 
-For more information, please refer to the [API documentation](https://mayakaapps.github.io/KMP-RWMutex/api/rwmutex/com.mayakapps.rwmutex/-read-write-mutex/index.html).
+For more information, please refer to the [API documentation](https://mayakaapps.github.io/KMP-RWMutex/latest/api/rwmutex/com.mayakapps.rwmutex/-read-write-mutex/index.html).
 
 ## Documentation
 
