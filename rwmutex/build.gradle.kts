@@ -65,17 +65,23 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
+                implementation(libs.kotlinx.atomicfu)
                 implementation(libs.kotlinx.coroutines.core)
             }
         }
 
-        commonTest {
+        val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
 
                 implementation(libs.kotlinx.coroutines.test)
             }
         }
+
+        val jsAndWasmTest by creating { dependsOn(commonTest) }
+        jsTest { dependsOn(jsAndWasmTest) }
+        wasmJsTest { dependsOn(jsAndWasmTest) }
+        wasmWasiTest { dependsOn(jsAndWasmTest) }
     }
 }
 

@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.dokka)
     alias(libs.plugins.mavenPublish) apply false
 
+    alias(libs.plugins.kotlinx.atomicfu)
     alias(libs.plugins.kotlinx.binaryCompatibilityValidator)
 }
 
